@@ -1,12 +1,14 @@
 import React from 'react'
 
+import confLogo from '../images/badge-header.svg'; //importando imagen
 class Badge extends React.Component {
 
     render() {
         return ( 
            <div>
                <div>
-                   <img src="" alt="Logo de la conferencia" />
+                   {/*A source no le podemos pasar un string, le tenemos que pasar el valor de confLogo para lo evalue como expresion */}
+                   <img src={confLogo} alt="Logo de la conferencia" />
                </div>
 
                <div>
