@@ -1,0 +1,19 @@
+.BadgesList__element{
+    padding:10px;
+    margin-bottom:10px;
+    border-radius:10px;
+    display: flex;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.BadgesList__element img{
+    border-radius:50%;
+}
+
+.BadgesList__element div{
+    margin-left:10px;
+}
+
+.BadgesList__element div p{
+    margin:0;
+}
