@@ -3,6 +3,7 @@ import './styles/Badges.css';
 
 import Navbar from '../components/Navbar.js';
 import BadgesList from '../components/BadgesList.js';
+import {Link} from 'react-router-dom';
 
 import confLogo from '../images/badge-header.svg';
 
@@ -58,7 +59,8 @@ class Badges extends React.Component{
 
                 <div className="Badges__container">
                     <div className="Badges__buttons">
-                        <a href="/badges/new" className="btn btn-primary">New Badge</a>
+                        {/* sirve igual que el ancla 'a' pero evita que toda la pagina se renderice */}
+                        <Link to="/badges/new" className="btn btn-primary">New Badge</Link>
                     </div>
 
                     <div className="Badges__list">
