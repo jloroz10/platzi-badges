@@ -20,10 +20,13 @@ class BadgeNew extends React.Component{
         }
     }
 
+    
     handleChange = e =>{
         this.setState({
             form:{
-                ...this.state.form,
+                //para que se copie el estado anterior antes de agregar un nuevo cambio,
+                //de otro modo solo se tendria un atributo en el form
+                ...this.state.form, 
                 [e.target.name]:e.target.value
             }
         })

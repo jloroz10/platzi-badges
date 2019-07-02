@@ -25,7 +25,8 @@ class BadgeForm extends React.Component{
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <label >First Name:</label>
-                        <input onChange={this.props.onChange} 
+                        <input onChange={this.props.onChange} //lee la propiedad onChange pasada por parametro (props), en este caso se pasa
+                                                              // la funcion que se ejecutara desde la clase padre
                                className="form-control" 
                                type="text" 
                                name="firstName" 
@@ -34,7 +35,7 @@ class BadgeForm extends React.Component{
                     <div className="form-group">
                         <label >Last Name:</label>
                         <input onChange={this.props.onChange} className="form-control" type="text" name="lastName" value={this.props.formValues.lastName}/>
-                    </div>
+                    </div>  
                     <div className="form-group">
                         <label >Job Title:</label>
                         <input onChange={this.props.onChange} className="form-control" type="text" name="jobTitle" value={this.props.formValues.jobTitle}/>
