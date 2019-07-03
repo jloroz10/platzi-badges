@@ -4,6 +4,11 @@
     border-radius:10px;
     display: flex;
     border: 1px solid rgba(0,0,0,.1);
+    width: 500px;
+}
+.Badge__info{
+    width: fit-content;
+    margin: 0;
 }
 
 .BadgesList__element img{
@@ -20,4 +25,9 @@
 
 .twitter{
     color: lightskyblue;
+}
+
+ a{
+    width: inherit;
+    display: flex;
 }

@@ -11,7 +11,7 @@ class BadgeForm extends React.Component{
     //     })
     // }
     handleClick = e =>{
-        console.log("Button was clicked");
+        // console.log("Button was clicked");
 
     }
     // handleSubmit = e =>{
@@ -22,7 +22,7 @@ class BadgeForm extends React.Component{
     render(){
         return (
             <React.Fragment>
-                <h1>New Attendent</h1>
+                <h1>{this.props.type} Attendent</h1>
                 {this.props.error && (
                         <p className="text-danger">{this.props.error.message}</p>
                 )}

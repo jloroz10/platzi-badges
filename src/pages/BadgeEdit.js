@@ -3,15 +3,16 @@ import React from 'react';
 import headerImg from '../images/platziconf-logo.svg';
 import Badge from '../components/Badge.js';
 import BadgeForm from '../components/BadgeForm.js';
-import './styles/BadgeNew.css';
+import './styles/BadgeEdit.css';
 import api from '../api';
 import PageLoading from '../components/PageLoading';
-class BadgeNew extends React.Component{
+
+class BadgeEdit extends React.Component{
 
     // para no ver el mensaje de que un elemento paso a no controlado
     // se deben inicializar las variables
     state = {
-        loading:false,
+        loading:true,
         error:null,
         form:{
             firstName:'',
@@ -19,7 +20,8 @@ class BadgeNew extends React.Component{
             jobTitle:'',
             twitter:'',
             hashtag:'',
-            email:''
+            email:'',
+            avatarUlr:''
         }
     }
 
@@ -39,7 +41,7 @@ class BadgeNew extends React.Component{
         e.preventDefault();
         this.setState({loading:true,error:null});
         try{
-            api.badges.create(this.state.form);
+           await api.badges.update(this.props.match.params.badgeId,this.state.form);
 
             this.setState({
                 loading:false,
@@ -49,9 +51,10 @@ class BadgeNew extends React.Component{
                     jobTitle:'',
                     twitter:'',
                     hashtag:'',
-                    email:''
+                    email:'',
+                    avatarUrl:''
                 }})
-            console.log(this.props);
+            // console.log(this.props);
             this.props.history.push('/badges');
             // this.setState({loading:false});
         }catch(e){
@@ -60,6 +63,25 @@ class BadgeNew extends React.Component{
         }
       
     }
+
+    componentDidMount= async () =>{
+
+        try{
+            // console.log(this.props);
+            const data = await api.badges.read(this.props.match.params.badgeId);
+            this.setState({
+                form:data,
+                loading:false
+                
+            })
+            
+        }catch(e){
+            console.log(e.message);
+        }
+        
+
+    }
+
     render(){
 
         if(this.state.loading){
@@ -69,15 +91,14 @@ class BadgeNew extends React.Component{
         return (
             <React.Fragment>
               
-                <div className="BadgeNew__hero">
-                    <img className="BadgeNew__hero-image img-fluid" src={headerImg} alt="header logo"/>
+                <div className="BadgeEdit__hero">
+                    <img className="BadgeEdit__hero-image img-fluid" src={headerImg} alt="header logo"/>
                 </div>
 
                 <div className="container">
                     <div className="row">
                             <div className="col-12 col-md-6">
-                                <BadgeForm 
-                                type="New"
+                                <BadgeForm type='Edit'
                                 formValues={this.state.form} 
                                 onChange={this.handleChange}
                                 onSubmit={this.handleSubmit}
@@ -102,4 +123,4 @@ class BadgeNew extends React.Component{
     }
 }
 
-export default BadgeNew;
+export default BadgeEdit;

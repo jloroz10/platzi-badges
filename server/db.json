@@ -2,12 +2,13 @@
   "badges": [
     {
       "id": "2de30c42-9deb-40fc-a41f-05e62b5939a7",
-      "firstName": "Freda",
+      "firstName": "Frederic",
       "lastName": "Grady",
       "email": "Leann_Berge@gmail.com",
       "jobTitle": "Legacy Brand Director",
       "twitter": "FredaGrady22221-7573",
-      "avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon"
+      "avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon",
+      "hashtag": "#ts"
     },
     {
       "id": "d00d3614-101a-44ca-b6c2-0be075aeed3d",
@@ -16,7 +17,8 @@
       "email": "Ilene66@hotmail.com",
       "jobTitle": "Human Research Architect",
       "twitter": "MajorRodriguez61545",
-      "avatarUrl": "https://www.gravatar.com/avatar/d57a8be8cb9219609905da25d5f3e50a?d=identicon"
+      "avatarUrl": "https://www.gravatar.com/avatar/d57a8be8cb9219609905da25d5f3e50a?d=identicon",
+      "hashtag": "#otro"
     },
     {
       "id": "63c03386-33a2-4512-9ac1-354ad7bec5e9",
@@ -47,12 +49,13 @@
     },
     {
       "id": "3629db36-14f9-4f24-b139-200f3a1b9af7",
-      "firstName": "Breanna",
+      "firstName": "Brean",
       "lastName": "Runolfsdottir",
       "email": "Laurianne.Lynch@gmail.com",
       "jobTitle": "Lead Marketing Director",
       "twitter": "BreannaRunolfsdottir70705-1477",
-      "avatarUrl": "https://www.gravatar.com/avatar/684697e194c66d338c5ee91d030121cc?d=identicon"
+      "avatarUrl": "https://www.gravatar.com/avatar/684697e194c66d338c5ee91d030121cc?d=identicon",
+      "hashtag": "#platziconf"
     },
     {
       "id": "8c734836-1f7a-4493-b903-37db30fc7224",
@@ -114,8 +117,9 @@
       "lastName": "Bartell",
       "email": "Dean80@hotmail.com",
       "jobTitle": "National Mobility Administrator",
-      "twitter": "DevinBartell94456-3248",
-      "avatarUrl": "https://www.gravatar.com/avatar/714a712dc155ccc6b0d825dbc258ec0d?d=identicon"
+      "twitter": "@devin",
+      "avatarUrl": "https://www.gravatar.com/avatar/714a712dc155ccc6b0d825dbc258ec0d?d=identicon",
+      "hashtag": "#test"
     },
     {
       "id": "aa98596d-fea6-4686-90e1-93514b6dc011",
@@ -263,7 +267,7 @@
     },
     {
       "id": "29b5a744-5d7f-4d33-b9fd-c8ca639dc030",
-      "firstName": "Karl",
+      "firstName": "Karlos",
       "lastName": "Dietrich",
       "email": "Haleigh.Rempel94@yahoo.com",
       "jobTitle": "Future Research Engineer",
@@ -424,9 +428,9 @@
       "avatarUrl": "https://www.gravatar.com/avatar/4f164ea9a61e8d28e6b83a356d3ff5ae?d=identicon"
     },
     {
-      "firstName": "Richard",
-      "lastName": "Kaufman López",
-      "email": "richardbkaufman@gmail.com",
+      "firstName": "Ricardo",
+      "lastName": "K",
+      "email": "ear@gmail.com",
       "avatarUrl": "https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon",
       "jobTitle": "Frontend Engineer @ Kickass Partners",
       "twitter": "sparragus",
@@ -460,12 +464,12 @@
       "id": "ZfVCpGp"
     },
     {
-      "firstName": "asdasdj",
-      "lastName": "kjk",
-      "jobTitle": "jj",
-      "twitter": "jkj",
-      "hashtag": "kj",
-      "email": "k",
+      "firstName": "Jose",
+      "lastName": "Perez",
+      "jobTitle": "Data Analyst",
+      "twitter": "@teaws",
+      "hashtag": "#platziconf",
+      "email": "joll@example.com",
       "id": "oU0RR1R"
     },
     {
