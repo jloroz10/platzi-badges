@@ -3,6 +3,7 @@ import Logo from '../images/logo.svg';
 
 import {Link} from 'react-router-dom';
 import './styles/Navbar.css';
+
 class NavBar extends React.Component{
     render(){
         return (
