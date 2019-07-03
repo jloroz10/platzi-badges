@@ -12,17 +12,21 @@ class BadgeForm extends React.Component{
     // }
     handleClick = e =>{
         console.log("Button was clicked");
-    }
-    handleSubmit = e =>{
-        e.preventDefault();
-        console.log(this.state);
 
     }
+    // handleSubmit = e =>{
+    //     e.preventDefault();
+    //     console.log(this.state);
+
+    // }
     render(){
         return (
             <React.Fragment>
                 <h1>New Attendent</h1>
-                <form onSubmit={this.handleSubmit}>
+                {this.props.error && (
+                        <p className="text-danger">{this.props.error.message}</p>
+                )}
+                <form onSubmit={this.props.onSubmit}>
                     <div className="form-group">
                         <label >First Name:</label>
                         <input onChange={this.props.onChange} //lee la propiedad onChange pasada por parametro (props), en este caso se pasa
@@ -45,10 +49,17 @@ class BadgeForm extends React.Component{
                         <input onChange={this.props.onChange} className="form-control" type="text" name="twitter" value={this.props.formValues.twitter}/>
                     </div>
                     <div className="form-group">
+                        <label >Email:</label>
+                        <input onChange={this.props.onChange} className="form-control" type="text" name="email" value={this.props.formValues.email}/>
+                    </div>
+                    {/* <div className="form-group">
+                        <input onChange={this.props.onChange} className="form-control" type="text" name="avatarUrl" value={this.props.formValues.email}/>
+                    </div> */}
+                    <div className="form-group">
                         <label >Hashtag:</label>
                         <input onChange={this.props.onChange} className="form-control" type="text" name="hashtag" value={this.props.formValues.hashtag}/>
                     </div>
-
+                   
                     <button onClick={this.handleClick} className="btn btn-primary">Save</button>
                 </form>
             </React.Fragment>
