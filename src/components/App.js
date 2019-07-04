@@ -7,6 +7,9 @@ import Badges from '../pages/Badges.js';
 import Layout from './Layout.js';
 import NotFound from '../pages/NotFound.js';
 import BadgeEdit from '../pages/BadgeEdit';
+import BadgeDetailsContainer from '../pages/BadgeDetailsContainer';
+
+
 function App(){
     return(
         <BrowserRouter>
@@ -16,6 +19,7 @@ function App(){
                 <Route exact path="/badges" component={Badges}/>
                 <Route exact path="/badges/new" component={BadgeNew}/>
                 <Route exact path="/badges/:badgeId/edit" component={BadgeEdit}/>
+                <Route exact path="/badges/:badgeId" component={BadgeDetailsContainer}/>
                 <Route component={NotFound}/>
              </Switch>
         </Layout>

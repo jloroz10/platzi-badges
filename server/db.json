@@ -122,15 +122,6 @@
       "hashtag": "#test"
     },
     {
-      "id": "aa98596d-fea6-4686-90e1-93514b6dc011",
-      "firstName": "Antwan",
-      "lastName": "Walker",
-      "email": "Isom.Zboncak@yahoo.com",
-      "jobTitle": "Central Paradigm Executive",
-      "twitter": "AntwanWalker03371-3341",
-      "avatarUrl": "https://www.gravatar.com/avatar/45273652dd6323b8a2378e3208436180?d=identicon"
-    },
-    {
       "id": "8758e3df-00a6-424c-8878-ff6106a6f029",
       "firstName": "Kayla",
       "lastName": "McCullough",
@@ -464,21 +455,12 @@
       "id": "ZfVCpGp"
     },
     {
-      "firstName": "Jose",
-      "lastName": "Perez",
-      "jobTitle": "Data Analyst",
-      "twitter": "@teaws",
-      "hashtag": "#platziconf",
-      "email": "joll@example.com",
-      "id": "oU0RR1R"
-    },
-    {
-      "firstName": "Daniela",
+      "firstName": "Daniela Yolanda",
       "lastName": "Navarro",
       "jobTitle": "Designer",
       "twitter": "@dnc10",
-      "hashtag": "#asda",
-      "email": "dasdasd@ma.com",
+      "hashtag": "#platziconf",
+      "email": "dany@example.com",
       "id": "lohhv-p"
     }
   ]
