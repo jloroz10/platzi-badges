@@ -3,6 +3,8 @@ import React from 'react';
 import Modal from './Modal';
 
 function DeleteBadgeModal(props){
+
+  
     return(
         <Modal onClose={props.onClose} isOpen={props.isOpen}>
             <div className="DeleteBadgeModal">
